@@ -1,2 +1,17 @@
-console.log (moment().format('MMMM Do YYYY, h:mm a'));
-console.log (moment().hours())
+// 
+
+$(document).ready(function(){
+$("#currentDay").text(moment())
+
+$(".saveBtn").on("click", function() {
+    var time = $(this).parent().attr("id")
+    console.log (time)
+
+var toDo = $(this).siblings(".description").val()
+    console.log (toDo)
+    localStorage.setItem(time, toDo);
+
+  });
+
+
+})
