@@ -16,7 +16,7 @@ $(".saveBtn").on("click", function() {
   function hourUpdate() {
 
     var currentHour = moment().hours();
-    
+    var interval = setInterval(hourUpdate, 30,000);
   }
 
 })
