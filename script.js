@@ -23,6 +23,19 @@ $(".saveBtn").on("click", function() {
       if (blockHour === currentHour) {
         $(this).addClass("present");
       }
+      else if (blockHour < currentHour) {
+        $(this).removeClass("present");
+        $(this).addClass("past");
+
+        else if (blockHour === currentHour)
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+
+
+
+
+
     })
 
 
