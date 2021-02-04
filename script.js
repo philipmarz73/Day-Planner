@@ -4,16 +4,16 @@ $(document).ready(function() {
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
 $(".saveBtn").on("click", function() {
-    var time = $(this).parent().attr("id")
-    console.log (time)
+    var time = $(this).parent().attr("id");
+    console.log (time);
 
-    var toDo = $(this).siblings(".description").val()
-    console.log (toDo)
+    var toDo = $(this).siblings(".description").val();
+    console.log (toDo);
     localStorage.setItem(time, toDo);
 
   });
 
-  function hourUpdate() {
+  function hourUpdater() {
 
     var currentHour = moment().hours();
 
@@ -35,9 +35,9 @@ $(".saveBtn").on("click", function() {
     });
   }
 
-    hourUpdate();
+    hourUpdater();
 
-    var interval = setInterval(hourUpdate, 15000);
+    var interval = setInterval(hourUpdater, 15000);
 
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
@@ -48,6 +48,8 @@ $(".saveBtn").on("click", function() {
     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+
+    
   
   });
 
