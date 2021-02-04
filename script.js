@@ -26,21 +26,28 @@ $(".saveBtn").on("click", function() {
       else if (blockHour < currentHour) {
         $(this).removeClass("present");
         $(this).addClass("past");
-
-        else if (blockHour === currentHour)
+      }
+      else {
         $(this).removeClass("past");
         $(this).removeClass("present");
         $(this).addClass("future");
-
-
-
-
-
-    })
+      }
+    });
+  }
 
 
 
     var interval = setInterval(hourUpdate, 30,000);
+
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
   }
 
 })
