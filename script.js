@@ -16,6 +16,13 @@ $(".saveBtn").on("click", function() {
   function hourUpdate() {
 
     var currentHour = moment().hours();
+
+    $(".time-block").each(function() {
+      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+    })
+
+
+
     var interval = setInterval(hourUpdate, 30,000);
   }
 
