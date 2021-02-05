@@ -17,5 +17,5 @@ As mentioned, the Project entailed use of HTML, CSS and jQuery for coding, and t
 
 # License
 
-MIT 
+&copy; MIT 
 
