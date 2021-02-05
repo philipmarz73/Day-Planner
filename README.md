@@ -13,6 +13,7 @@ Besides offering practice in using jQuery to dynamically update and render HTML 
 ## Screenshot
 
 A screenshot showing full functionality can be found HERE: https://github.com/philipmarz73/Day-Planner/issues/new
+![Day Planner Homework screenshot HW #5](https://user-images.githubusercontent.com/70178481/107053795-4039fa80-679d-11eb-830a-f639230d30d8.png)
 
 
 ## Resources
